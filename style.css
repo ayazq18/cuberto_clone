@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
 html,body{
 width: 100%;
 height: 100%;
@@ -90,10 +95,10 @@ color: transparent;
     
 }
 
-#homelast p::selection{
+/* #homelast p::selection{
     color: #fff;
     background-color: #000;
-}
+} */
 
 #featured{
     padding: 10vw 15vw;
@@ -119,7 +124,7 @@ color: transparent;
 }
 
 #fleft{
-    overflow: auto;
+    overflow: hidden;
     width: 45%;
     height: inherit;
 }
@@ -161,4 +166,69 @@ color: transparent;
     width: 90%;
     height: 90%;
     background-color: red;
+}
+
+#btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btndiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 4vw;
+    font-weight: 400;
+    width: 55%;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 55%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide{
+    width: 30%;
+}
+
+.slide .img{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .tag{
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+    width: fit-content;
+    border-radius: 100px;
 }
